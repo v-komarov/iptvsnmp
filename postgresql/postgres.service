@@ -1,0 +1,10 @@
+[Unit]
+Description=IPTV postgresql service
+After=docker.service
+Requires=docker.service
+
+[Service]
+ExecStart=/usr/bin/docker start postgres12
+
+[Install]
+WantedBy=multi-user.target

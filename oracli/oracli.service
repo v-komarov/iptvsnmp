@@ -1,0 +1,10 @@
+[Unit]
+Description=IPTV oracli service
+After=postgres.service
+Requires=postgres.service
+
+[Service]
+ExecStart=/usr/bin/docker start oracli
+
+[Install]
+WantedBy=multi-user.target
