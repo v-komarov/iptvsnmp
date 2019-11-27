@@ -6,4 +6,4 @@ docker run -d --name oracli \
 -e PG_USER=snmpuser \
 -e PG_PASSWORD=snmpuser \
 -e PG_DATABASE=snmpdb \
-oracli:fifth
+oracli:sixth

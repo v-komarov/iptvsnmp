@@ -23,7 +23,8 @@ CREATE INDEX IF NOT EXISTS devices_j ON devices USING GIN (data);
 
 CREATE TABLE IF NOT EXISTS addresses (
     ip_address VARCHAR(15) NOT NULL PRIMARY KEY,
-    device INTEGER REFERENCES devices
+    device INTEGER REFERENCES devices,
+    community VARCHAR(50) NOT NULL
 );
 
 
